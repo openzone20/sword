@@ -246,21 +246,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Counter-examples: "What makes unicorns cry?".
 
 - Defined Standard types of changes to be recorded:
-  **Added** for new features.
-  **Changed** for changes in existing functionality.
-  **Deprecated** for soon-to-be removed features.
-  **Removed** for now removed features.
-  **Fixed** for any bug fixes.
-  **Security** in case of vulnerabilities.
+
+  - **Added** for new features.
+  - **Changed** for changes in existing functionality.
+  - **Deprecated** for soon-to-be removed features.
+  - **Removed** for now removed features.
+  - **Fixed** for any bug fixes.
+  - **Security** in case of vulnerabilities.
 
 - Defined the use of Semantic Versioning v2.0.0 to change:
-  **MAJOR** version when making incompatible API changes
-  **MINOR** version when adding functionality in a backward compatible manner
-  **PATCH** version when making backward compatible bug fixes
+
+  - **MAJOR** version when making incompatible API changes
+  - **MINOR** version when adding functionality in a backward compatible manner
+  - **PATCH** version when making backward compatible bug fixes
 
 - Force first push to Github (in case of problems)
-  git push --force origin default
+
+  - git push --force origin default
 
 - Release creation commands:
-  git tag -a v0.0.1 -m "Release version 0.0.1"
-  git push origin v0.0.1
+
+  - git tag -a v0.0.1 -m "Release version 0.0.1"
+  - git push origin v0.0.1
+
+- Commit changes to remote repository
+  - git add . // stage all changes OR...
+  - git add file1, file2 // ...stage only specific files
+  - git commit -m "Commit message" // commit changes
+  - git push origin branch_name // push changes to Github
