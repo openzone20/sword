@@ -1,0 +1,25 @@
+{
+  "name": "openzone20/sword",
+  "description": "Sword - the simple, extensible and incredibly fast PHP framework, enables anyone to rapidly build RESTful web applications.",
+  "homepage": "http://swordphp.com",
+  "license": "BSD3",
+  "authors": [
+    {
+      "name": "Roberto Sciarra",
+      "email": "roberto.sciarra@openzone20.com",
+      "homepage": "http://www.openzone20.com",
+      "role": "Lead Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0|^8.1",
+    "ext-json": "*",
+    "monolog/monolog": "^3.8"
+  },
+  "autoload": {
+    "files": [
+      "sword/autoload.php",
+      "sword/sword.php"
+    ]
+  }
+}
