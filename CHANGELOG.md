@@ -26,8 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Trademark sign previously shown after the project description in version
-  0.3.0
+- Trademark sign previously shown after the project description in version 0.3.0
 
 ## [1.1.1] - 2023-03-05
 
@@ -235,29 +234,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Explanation of the recommended reverse chronological release ordering.
 
-## [0.0.1] - 2014-05-31
+## [0.0.1] - 2024-12-21
 
 ### Added
 
-- This CHANGELOG file to hopefully serve as an evolving example of a
-  standardized open source project CHANGELOG.
+- This CHANGELOG file.
+- Monolog v3.8 for standard logging.
 - CNAME file to enable GitHub Pages custom domain.
 - README now contains answers to common questions about CHANGELOGs.
 - Good examples and basic guidelines, including proper date formatting.
 - Counter-examples: "What makes unicorns cry?".
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.1...HEAD
-[1.1.1]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.3.0...v1.0.0
-[0.3.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.8...v0.1.0
-[0.0.8]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.7...v0.0.8
-[0.0.7]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.6...v0.0.7
-[0.0.6]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.5...v0.0.6
-[0.0.5]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.4...v0.0.5
-[0.0.4]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.3...v0.0.4
-[0.0.3]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.2...v0.0.3
-[0.0.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.0.2
-[0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
+- Defined Standard types of changes to be recorded:
+  **Added** for new features.
+  **Changed** for changes in existing functionality.
+  **Deprecated** for soon-to-be removed features.
+  **Removed** for now removed features.
+  **Fixed** for any bug fixes.
+  **Security** in case of vulnerabilities.
+
+- Defined the use of Semantic Versioning v2.0.0 to change:
+  **MAJOR** version when making incompatible API changes
+  **MINOR** version when adding functionality in a backward compatible manner
+  **PATCH** version when making backward compatible bug fixes
+
+- Force first push to Github (in case of problems)
+  git push --force origin default
+
+- Release creation commands:
+  git tag -a v0.0.1 -m "Release version 0.0.1"
+  git push origin v0.0.1

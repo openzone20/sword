@@ -39,14 +39,14 @@ class Log2file
 	 * @var Array
 	 */
 	private $mapped_methods = [
-		'debug' => 'debug',
-		'info' => 'info',
-		'notice' => 'notice',
-		'warning' => 'warning',
-		'error' => 'error',
-		'critical' => 'critical',
-		'alert' => 'alert',
-		'emergency' => 'emergency'
+		'debug' => 'Debug',
+		'info' => 'Info',
+		'notice' => 'Notice',
+		'warning' => 'Warning',
+		'error' => 'Error',
+		'critical' => 'Critical',
+		'alert' => 'Alert',
+		'emergency' => 'Emergency'
 	];
 
 	/**

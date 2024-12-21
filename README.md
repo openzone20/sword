@@ -13,7 +13,7 @@ Sword::route('/', function(){
 Sword::start();
 ```
 
-[Learn more](http://Swordphp.com/learn)
+[Learn more](https://docs.flightphp.com/learn)
 
 # Requirements
 
@@ -21,7 +21,7 @@ Sword requires `PHP 7.4` or greater.
 
 # License
 
-Sword is released under the [MIT](http://Swordphp.com/license) license.
+Sword is released under the [BSD 3-Clause](https://github.com/openzone20/sword/blob/default/LICENSE) license.
 
 # Installation
 
@@ -30,10 +30,10 @@ Sword is released under the [MIT](http://Swordphp.com/license) license.
 If you're using [Composer](https://getcomposer.org/), you can run the following command:
 
 ```
-composer require mikecao/Sword
+composer require openzone20/Sword
 ```
 
-OR you can [download](https://github.com/mikecao/Sword/archive/master.zip) them directly
+OR you can [download](https://github.com/openzone20/sword/archive/refs/heads/default.zip) them directly
 and extract them to your web directory.
 
 2\. Configure your webserver.
@@ -64,7 +64,7 @@ server {
 First include the framework.
 
 ```php
-require 'Sword/Sword.php';
+require 'sword/Sword.php';
 ```
 
 If you're using Composer, run the autoloader instead.
@@ -859,9 +859,8 @@ The following is a list of all the available configuration settings:
 
 # Framework Methods
 
-Sword is designed to be easy to use and understand. The following is the complete
-set of methods for the framework. It consists of core methods, which are regular
-static methods, and extensible methods, which are mapped methods that can be filtered
+Sword is designed to be easy to use and understand. The following is the complete set of methods for the framework.
+It consists of core methods, which are regular static methods, and extensible methods, which are mapped methods that can be filtered
 or overridden.
 
 ## Core Methods
@@ -905,9 +904,9 @@ Instead of running Sword as a global static class, you can optionally run it
 as an object instance.
 
 ```php
-require 'Sword/autoload.php';
+require './sword/autoload.php';
 
-use Sword\Engine;
+use sword\Engine;
 
 $app = new Engine();
 
@@ -918,5 +917,4 @@ $app->route('/', function(){
 $app->start();
 ```
 
-So instead of calling the static method, you would call the instance method with
-the same name on the Engine object.
+So instead of calling the static method, you would call the instance method with the same name on the Engine object.
